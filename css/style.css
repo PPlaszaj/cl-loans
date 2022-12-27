@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+}
+:root {
+    --main-color: rgb(1, 36, 186);
+    --accent-color: rgb(9, 216, 98);
+    --text-color: rgb(53, 53, 53);
+    --radius: 8px;
+}
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+body {
+    background-image: url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    color: var(--text-color);
+}
+.main {
+    height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+    width: 1100px;
+    text-align: center;
+}
+.header {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__nav {
+    display: flex;
+    gap: 40px;
+    
+}
+.header__logo {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--main-color);
+}
+.main__intro {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.info__small-heading {
+    font-size: 1.5rem;
+    color: var(--accent-color);
+    font-weight: 700;
+}
+.info__heading {
+    font-size: 4rem;
+    color: var(--main-color);
+    font-weight: 700;
+
+}
+.intro__info {
+    text-align: left;
+}
+.info__icons {
+    display: flex;
+    gap: 20px;
+}
+.icons__item {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.info__icons .icons__item::before {
+    color: var(--accent-color);
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: bold;
+}
+.info__icons .icons__item:nth-child(1)::before {
+    content: "\f0c2";
+}
+  
+.info__icons .icons__item:nth-child(2)::before {
+    content: "\f3d1";
+}
+  
+.info__icons .icons__item:nth-child(3)::before {
+    content: "\f2f2";
+}
+.info__icons .icons__item .item__text {
+    font-weight: 600;
+}
+.form__heading {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.form__field {
+    display: flex;
+    flex-direction: column;
+    
+}
+.intro__form {
+    text-align: left;
+    font-size: 0.8rem;
+    background-color: #fff;
+    border-radius: var(--radius);
+    padding: 30px;
+}
+input {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    border: 0;
+    border-bottom: solid 1px rgb(221, 218, 218);
+}
+.form__button {
+    margin-top: 40px;
+    padding: 20px 30px;
+    border-radius: var(--radius);
+    background-color: var(--accent-color);
+    border: 0;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+}
